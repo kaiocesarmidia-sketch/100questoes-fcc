@@ -176,6 +176,24 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     letter-spacing: -0.012em;
   }
   .hero h1 em { font-style: italic; color: var(--dourado); }
+  /* selo de reta final (urgência real — data da prova) */
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--bordo); color: var(--marfim);
+    font-family: var(--corpo); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    padding: 10px 18px; margin-bottom: 18px;
+    border-left: 3px solid var(--dourado);
+  }
+  .hero-badge .pulse {
+    width: 9px; height: 9px; border-radius: 50%; background: var(--dourado);
+    animation: retapulse 1.8s infinite;
+  }
+  @keyframes retapulse {
+    0% { box-shadow: 0 0 0 0 rgba(201,162,75,0.6); }
+    70% { box-shadow: 0 0 0 9px rgba(201,162,75,0); }
+    100% { box-shadow: 0 0 0 0 rgba(201,162,75,0); }
+  }
   .hero .sub {
     font-family: var(--corpo); font-size: clamp(1.02rem, 1.5vw, 1.15rem);
     line-height: 1.55; color: rgba(245,235,214,0.84); margin: 0 0 28px;
@@ -506,34 +524,35 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     <div class="hero-grid">
       <!-- coluna texto -->
       <div class="hero-text">
+        <div class="hero-badge"><span class="pulse"></span>Reta final · SEFAZ-CE · Prova 1º de agosto</div>
         <div class="hero-eye-wrap">
           <span class="filete-side"></span>
-          <span class="eyebrow">100 Questões FCC · Prof. Cláudia Kozlowski</span>
+          <span class="eyebrow">FCC 100 · Prof. Cláudia Kozlowski</span>
         </div>
-        <h1>O <em>Português da FCC</em> tem padrão. Quem enxerga o padrão, pontua.</h1>
-        <p class="sub">São 100 questões reais da FCC, comentadas em vídeo uma por uma. Você larga o Português genérico e passa a estudar do jeito que essa banca — e só ela — cobra na prova.</p>
+        <h1>Na prova da FCC, quem decora trava. Quem <em>reconhece o padrão</em>, pontua.</h1>
+        <p class="sub">São 100 questões reais da banca comentadas em vídeo, uma a uma. Na reta final não sobra tempo pra Português genérico: você treina o padrão que a FCC repete e chega no dia 1º de agosto reconhecendo a pegadinha antes de ler as alternativas.</p>
 
         <div class="hero-trust">
           <span class="stars">★★★★★</span>
-          <span>Aprovados reais · <strong>20 anos</strong> decifrando a FCC</span>
+          <span>Auditora fiscal · <strong>20 anos</strong> decifrando a FCC</span>
         </div>
 
         <div class="cta-area">
-          <a href="#matricula" class="btn lg">Quero dominar o Português da FCC <span class="arrow">→</span></a>
-          <div class="cta-meta">7 dias de garantia<span class="dot">·</span>Pix ou cartão<span class="dot">·</span>Acesso imediato</div>
+          <a href="#matricula" class="btn lg">Começar a reta final agora <span class="arrow">→</span></a>
+          <div class="cta-meta">Acesso imediato<span class="dot">·</span>Pix ou cartão<span class="dot">·</span>7 dias de garantia</div>
         </div>
 
         <div class="hero-mini">
-          <span>Entenda o padrão da banca</span>
-          <span>Estude direto ao ponto</span>
-          <span>Português vira seu diferencial</span>
+          <span>Reconheça a pegadinha da banca</span>
+          <span>Estude só o que cai, sem rodeio</span>
+          <span>Reta final sem perder tempo</span>
         </div>
       </div>
 
       <!-- coluna amostra de Português (pegadinha FCC real) -->
       <aside class="hero-amostra" aria-label="Exemplo de questão no estilo FCC">
-        <span class="amostra-tag">Estilo FCC</span>
-        <div class="amostra-eye">A pegadinha clássica da banca</div>
+        <span class="amostra-tag">Cai no SEFAZ-CE</span>
+        <div class="amostra-eye">A pegadinha que a FCC repete</div>
         <p class="enunciado">Assinale a reescrita que mantém o sentido e a correção de: <em>“Os candidatos a que aludi foram aprovados.”</em></p>
         <ul class="alternativas">
           <li class="pegadinha"><span class="letra">A)</span> Os candidatos que aludi foram aprovados.</li>
